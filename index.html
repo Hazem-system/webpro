@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر الكتروني</title>
+  
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- ملف CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="header">
+    <!-- يسار -->
+    <div class="icons">
+      <button><i class="fa-solid fa-cart-shopping"></i></button>
+      <button id="userBtn"><i class="fa-solid fa-user"></i></button>
+    </div>
+
+    <!-- اللوجو -->
+    <div class="logo"><img src="images/logo.png" alt=""></div>
+
+    <!-- يمين -->
+    <div class="icons">
+      <button id="openSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="burger" id="burger"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- القائمة -->
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#">المنتجات</a></li>
+      <li><a href="#">من نحن</a></li>
+      <li><a href="#">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- بوب أب البحث -->
+  <div class="popup" id="searchPopup">
+    <div class="popup-content">
+      <button class="close-btn" id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+      <h2>ابحث هنا</h2>
+      <div class="search-box">
+        <input type="text" placeholder="ادخل كلمة البحث">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- بوب أب تسجيل الدخول/إنشاء حساب -->
+  <div class="popup" id="userPopup">
+    <div class="popup-content">
+      <button class="close-btn" id="closeUser"><i class="fa-solid fa-xmark"></i></button>
+      <h2 id="formTitle">تسجيل الدخول</h2>
+      
+      <!-- فورم تسجيل الدخول -->
+      <form id="loginForm">
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <input type="password" placeholder="كلمة المرور" required>
+        <button type="submit">دخول</button>
+      </form>
+
+      <!-- فورم إنشاء حساب (مخفي افتراضياً) -->
+      <form id="signupForm" style="display:none;">
+        <input type="text" placeholder="الاسم الكامل" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <input type="password" placeholder="كلمة المرور" required>
+        <button type="submit">إنشاء حساب</button>
+      </form>
+
+      <!-- الرابط لتبديل بين الفورمين -->
+      <p id="toggleForm">
+        ليس لديك حساب؟ <a href="#">تسجيل</a>
+      </p>
+    </div>
+  </div>
+
+
+   <div class="banar">
+      <img src="images/img10.jpg" alt="">
+    </div>
+  <section class="products">
+  <div class="section-title">
+    <h3>هدايا رجالية بالاسم</h3>
+    <button><a href="#">عرض الكل</a></button>
+  </div>
+  <div class="products-slider">
+    <div class="product-card">
+      <img src="/images/clock.jpg" alt="منتج 1">
+      <h3>ساعة رجالي بالاسم</h3>
+      <p class="price">120 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/images/images (3).jpeg" alt="منتج 2">
+      <h3>تعليقة سيارة بالاسم</h3>
+      <p class="price">150 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/images/kaabak.jpg" alt="منتج 3">
+      <h3>كبك بالاسم</h3>
+      <p class="price">200 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/images/clock1.jpeg" alt="منتج 4">
+      <h3>ساعة رجالي ماركة بالاسم</h3>
+      <p class="price">180 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/key1.jpg" alt="منتج 5">
+      <h3>ميدالية مفاتيح بالاسم</h3>
+      <p class="price">250 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+  </div>
+</section>
+   
+
+<div class="banar">
+      <img src="images/img12.jpg" alt="دفع آمن">
+    </div>
+  <section class="products">
+  <div class="section-title">
+    <h3>اكسسوارات نسائية</h3>
+    <button><a href="#">عرض الكل</a></button>
+  </div>
+  <div class="products-slider">
+    <div class="product-card">
+      <img src="/images/aswara.jpg" alt="اسوارة نسائي بالاسم">
+      <h3>اسوارة بتصميم فخم بالاسم</h3>
+      <p class="price">120 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/images/aswaara.jpeg" alt="بروش تخرج بالاسم">
+      <h3>بروش تخرج بالاسم</h3>
+      <p class="price">150 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/images/slsaal.jpeg" alt="سلسال تخرج بالاسم">
+      <h3>سلسال تخرج بالاسم</h3>
+      <p class="price">200 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/images/slsaal2.jpeg" alt="سلسال نسائي بالاسم">
+      <h3>سلسال بالاسم بتصميم أنيق </h3>
+      <p class="price">180 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/slsasl1.jpeg" alt="سلسال بالاسم">
+      <h3>سلسال بالاسم مطلي بالذهب</h3>
+      <p class="price">250 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+    <div class="product-card">
+      <img src="images/slsal.jpeg" alt="سلسال تخرج بالاسم والتاريخ">
+      <h3>سلسال تخرج بالاسم والتاريخ</h3>
+      <p class="price">250 ر.س</p>
+      <button>إضافة للسلة</button>
+    </div>
+  </div>
+</section>
+  <section class="features">
+  <h2>مميزاتنا</h2>
+  <div class="features-container">
+
+    <div class="feature-box">
+      <i class="fas fa-headset"></i>
+      <h3>خدمة العملاء</h3>
+      <p>فريقنا المتعهد جاهز لتقديم الدعم والاستشارة حول الساعة، مما يضمن رضاكم وحل مشكلاتكم بسرعة</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-truck"></i>
+      <h3>توصيل سريع وموثوق</h3>
+      <p>نعمل مع شركات شحن مؤثوقة لضمان توصيل طلباتكم بسرعة وكفاءة، مع تتبع الشحن لمعرفة موقع طلبكم في أي وقت</p>
+    </div>
+
+    <div class="feature-box">
+      <i class="fas fa-credit-card"></i>
+      <h3>مرونة في الدفع</h3>
+      <p>وفرنا لكم خيارات دفع متنوعة تتناسب مع احتياجاتكم، من البطاقات الائتمانية إلى محافظ الدفع الإلكتروني</p>
+    </div>
+
+    <div class="feature-box">
+      <i class="fas fa-users"></i>
+      <h3>+4,000 عميل</h3>
+      <p>يحب منتجاتنا</p>
+    </div>
+
+    <div class="feature-box">
+      <i class="fas fa-star"></i>
+      <h3>+500 تقييم</h3>
+      <p>عدد التقييمات</p>
+    </div>
+
+    <div class="feature-box">
+      <i class="fas fa-award"></i>
+      <h3>5 / 5 نجوم</h3>
+      <p>أفضل متجر</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- الفوتر -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>خدمة العملاء</h4>
+      <ul>
+        <li><a href="#">إيميل</a></li>
+        <li><a href="#">جوال</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>روابط تهمك</h4>
+      <ul>
+        <li><a href="#">سياسة الخصوصية</a></li>
+        <li><a href="#">سياسة الدفع</a></li>
+        <li><a href="#">سياسة الغاء و رد الاموال</a></li>
+        <li><a href="#">حاب توصل لعميل كهديّة؟</a></li>
+        <li><a href="#">الشحن والتوصيل</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <img src="logo.png" alt="شعار" class="footer-logo">
+      <p>متجر الرياض نحن نؤمن أن لكل شخص مظهر جذاب نقدم لك كل ما هو جديد في عالم الأزياء والاكسسوارات المميزة والعصرية</p>
+    </div>
+  </div>
+<script src="main.js"></script>
+  <div class="footer-bottom">
+    <p>الحقوق محفوظة © 2025 </p>
+    <div class="payments">
+      <img src="visa.png" alt="visa">
+      <img src="mastercard.png" alt="mastercard">
+      <img src="applepay.png" alt="apple pay">
+      <img src="stc.png" alt="stc pay">
+    </div>
+  </div>
+</footer>
+</body>
+</html>
